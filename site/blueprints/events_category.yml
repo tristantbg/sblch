@@ -1,0 +1,50 @@
+title: Rencontres
+icon: user-circle-o
+pages:
+  template:
+    - event
+  num:
+    mode: default
+    display: null
+  max: null
+  sort: false
+  hide: false
+files: false
+fields:
+  title:
+    label: Titre
+    type: title
+  icon:
+    label: Icône
+    type: quickselect
+    help: Sera appliquée a toutes les sous-pages
+    options:
+      theatre: Théâtre
+      science: Science
+      savants: Des savants sur les planches
+      cinema: Cinéma & cuisine du monde
+      chair: En chair et en texte
+      jeune: Jeune public
+      rencontres: Rencontres
+      scienceshumaines: Sciences humaines sur un plateau
+      expositions: Expositions
+    width: 1/2
+  color:
+    label: Couleur
+    type: color
+    width: 1/2
+  text:
+    label: Texte
+    type: textarea
+  pageindex:
+    label: Index
+    type: index
+    options: children
+    columns:
+      title:
+        label: Titre
+        width: 300
+      subtitle: 
+        label: Sous-titre
+        width: 300
+      uid: Slug

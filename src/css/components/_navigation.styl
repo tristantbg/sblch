@@ -1,0 +1,119 @@
+#burger
+	position fixed
+	width 11vh
+	z-index 51
+	+above($sm + 1)
+		height 4vh
+		padding 0 2vh
+		top 2vh
+		left 11vh
+	+below($sm)
+		padding 0 2vw
+		height 13vw
+		width 15vw
+		top 13vw
+		right 0
+	svg
+		display block
+		width 100%
+		height 100%
+	div
+		// font-size 2.5vh
+		padding-top 0.3em
+		+below($sm)
+			display none
+
+#menu-desktop
+	position fixed
+	z-index 51
+	padding-bottom 1.5rem
+	+above($sm + 1)
+		top 0
+		height 100%
+		left 11vh
+		width 33vh
+		transform translateX(-100%) translateZ(0)
+		transition transform 500ms $kinetic
+	+below($sm)
+		top 13vw
+		height calc(100% - 13vw)
+		left 0
+		width 100%
+		visibility hidden
+		overflow scroll
+	.inner
+		display flex
+		flex-direction column
+		justify-content space-between
+		align-items center
+		width 100%
+		min-height 100%
+	.close
+		width 100%
+		height 4rem
+		display flex
+		justify-content flex-end
+		padding 1rem 2vw
+		border-bottom 1px solid
+		svg
+			width 2rem
+			height 2rem
+			display block
+		+above($sm + 1)
+			display none
+	nav
+		text()
+		medium()
+		display flex
+		flex-direction column
+		width 100%
+		a
+			text-transform uppercase
+			padding .3em
+			border-bottom 1px solid
+			+below($sm)
+				font-size 2rem
+				padding 0
+	.menu-buttons
+		display flex
+		flex-direction column
+		align-items center
+		padding 2rem
+		a
+			display block
+			width 20vh
+			height 20vh
+			&:first-child
+				margin-bottom 1rem
+		.icon
+			background $secondary
+			width 100%
+			height 100%
+			padding 20%
+		svg
+			display block
+			width 100%
+			height 100%
+	.socials
+		width 100%
+		justify-content center
+
+body.menu-open
+	#menu-desktop
+		transform translateX(0%) translateZ(0)
+		visibility visible
+
+#menu-mobile
+	.dropdown
+		display flex
+		justify-content center
+		align-items center
+		width 3rem
+		height 3rem
+		svg
+			display block
+			width 3rem
+			height 3rem
+	&[aria-expanded="true"]
+		.dropdown
+			transform rotate(180deg)

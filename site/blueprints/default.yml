@@ -1,0 +1,33 @@
+title: Page
+pages: false
+files: true
+fields:
+  title:
+    label: Titre
+    type:  text
+    width: 3/4
+  featured:
+    label: Image
+    type: image
+    help: Important
+    width: 1/4
+  text:
+    label: Texte
+    type:  textarea
+  medias:
+    label: Medias
+    type: images
+  downloads:
+    label: Téléchargements
+    type: structure
+    style: table
+    fields:
+      title:
+        label: Titre
+        type: text
+        required: true
+      file:
+        label: Fichier
+        type: quickselect
+        options: files
+        required: true

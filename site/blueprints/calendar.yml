@@ -1,0 +1,32 @@
+title: Calendrier
+icon: calendar
+deletable: false
+options:
+  url: false
+pages:
+  template:
+    - events
+    - events_category
+  num:
+    mode: default
+    display: null
+  max: null
+  sort: false
+  hide: false
+files: false
+fields:
+  title:
+    label: Titre
+    type: title
+  pageindex:
+    label: Index
+    type: index
+    options: grandchildren
+    columns:
+      title:
+        label: Title
+        width: 300
+      subtitle: 
+        label: Sous-titre
+        width: 300
+      uid: Slug

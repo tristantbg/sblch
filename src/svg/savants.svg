@@ -1,0 +1,11 @@
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72.85 69.51">
+  <defs>
+    <style>
+      .cls-3{stroke:#1d1d1b;stroke-miterlimit:10;stroke-width:2px;fill:none}
+    </style>
+  </defs>
+  <path d="M32 21.51v33.1a4.41 4.41 0 0 0 8.81 0V21.4" stroke-miterlimit="10" stroke-width="2" stroke="#1d1d1b" fill="none"/>
+  <path d="M44.66 19.23c0 1.39-3.68 2.51-8.23 2.51s-8.24-1.12-8.24-2.51 3.69-2.51 8.24-2.51 8.23 1.12 8.23 2.51z" stroke="#1d1e1b" stroke-miterlimit="10" stroke-width="2" fill="none"/>
+  <path fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="2px" d="M40.83 47c8.25.88 14.37 4.21 14.37 8.17 0 4.64-8.4 8.41-18.77 8.41s-18.78-3.74-18.78-8.38c0-4 6.13-7.28 14.37-8.17M24.63 41.89h7.39M40.83 41.89h7.33M21.13 60.64l-2.08 7.87M36.43 63.61v4.9M51.59 60.16l2.22 8.35"/>
+  <path fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="2px" d="M52.7 41.89h4.35l14.14 26.62H1.66L15.8 41.89h4.35M17.65 54.86L28.19.19M55.2 54.86L44.66.19"/>
+</svg>

@@ -1,0 +1,46 @@
+#page-content
+  background $ghostwhite
+#current-title, .menu, .navigation
+  background $lightblue
+
+[page-type=home]
+	#current-title, .menu, .navigation
+		background $lightyellow
+
+[page-type=event],
+[page-type=season]
+	#page-content
+		background $ghostwhite
+	#current-title, .menu, .navigation
+		background $lightblue
+
+[page-type=calendar]
+	#page-content
+		background $ghostwhite
+	#current-title, .menu, .navigation
+		background $violet
+
+[page-type=events],
+[page-type=events_category],
+[page-type=index]
+	#page-content
+		+above($md + 1)
+			background $ghostwhite
+	#current-title, .menu, .navigation
+		background $blue
+
+[page-type=about]
+	#page-content
+		background $ghostwhite
+	#current-title, .menu, .navigation
+		background $grey
+
+[page-type=informations]
+	#page-content
+		background $ghostwhite
+	#current-title, .menu, .navigation
+		background $red
+
+[page-type=default]
+	#current-title, .menu, .navigation
+		background $grey

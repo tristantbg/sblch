@@ -1,0 +1,68 @@
+title: Home
+icon: home
+pages: false
+files: true
+fields:
+  title:
+    label: Titre
+    type:  text
+  featured:
+    label: À la une
+    type: structure
+    style: table
+    limit: 4
+    fields:
+      page:
+        label: Page
+        type: quickselect
+        options: query
+        query:
+          page: calendrier
+          fetch: grandchildren
+          text: '{{title}} ({{uri}})'
+          value: '{{uri}}'
+        required: true
+      color:
+        label: Color
+        type: colorlist
+        required: true
+        options:
+          - "#e8f3a7|#1c3a9c"
+          - "#f7c7b5|#192a47"
+          - "#f04940|#ced8ef"
+          - "#192a47|#c1b878"
+          - "#a5ddbe|#496dc2"
+          - "#fcf57e|#02293a"
+          - "#d9b9ae|#496dc2"
+          - "#e47066|#1c3a9c"
+          - "#496dc2|#edd7da"
+          - "#1aa892|#ced8ef"
+          - "#ced8ef|#f04940"
+          - "#d69854|#31287c"
+          - "#edd7da|#f04940"
+          - "#c26b6a|#ced8ef"
+          - "#31287c|#f7c7b5"
+          - "#02293a|#ced8ef"
+          - "#c1b878|#02293a"
+  links:
+    label: Appels de une
+    type: structure
+    style: table
+    limit: 4
+    fields:
+      title:
+        label: Titre
+        type: text
+        required: true
+      subtitle:
+        label: Sous-titre
+        type: text
+      image:
+        label: Image
+        type: image
+      text:
+        label: Texte
+        type: textarea
+      link:
+        label: Lien
+        type: url

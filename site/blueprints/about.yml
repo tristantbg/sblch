@@ -1,0 +1,14 @@
+title: La Maison
+icon: info
+pages: subpage
+files: true
+fields:
+  title:
+    label: Titre
+    type:  text
+  text:
+    label: Texte 1
+    type:  textarea
+  text2:
+    label: Texte 2
+    type:  textarea

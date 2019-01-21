@@ -1,0 +1,17 @@
+title: Sous-page
+pages: false
+files: true
+fields:
+  prevnext: prevnext
+  title:
+    label: Titre
+    type:  text
+    width: 3/4
+  featured:
+    label: Image
+    type: image
+    help: Important
+    width: 1/4
+  text:
+    label: Texte
+    type:  textarea

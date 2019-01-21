@@ -1,0 +1,16 @@
+title: Representation
+icon: clock-o
+pages: false
+files: false
+preview: false
+fields:
+  prevnext: prevnext
+  date:
+    label: Date & heure
+    type: datetime
+    required: true
+    date:
+      format: DD/MM/YYYY
+    time:
+      format: 24
+      interval: 15

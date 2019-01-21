@@ -1,0 +1,76 @@
+section#saison-edito
+	background-size cover
+	background-position center
+	+below($sm)
+		background none
+	#edito-text
+		span(1/2)
+		background $ghostwhite
+		padding $gutter
+		+below($sm)
+			stack()
+			padding 1rem
+
+#rencontres
+	padding-left 0 !important
+	padding-right 0 !important
+	&> .title
+		padding $gutter $gutter 0
+		+below($sm)
+			padding 1rem 1rem 0
+	.sub-section
+		padding 0 $gutter
+		+below($sm)
+			padding 0 1rem
+		.title
+			padding .5em 0
+			display flex
+			align-items center
+			.section-title
+				flex 1
+			.section-icon
+				display flex
+				justify-content center
+				align-items center
+				margin-right 1rem
+				width 3rem
+				.icon
+					width 3rem
+					height 3rem
+					svg
+						display block
+						width 100%
+						height 100%
+			.dropdown
+				display flex
+				justify-content center
+				align-items center
+				width 3rem
+				height 3rem
+				svg
+					display block
+					width 3rem
+					height 3rem
+			&[aria-expanded="true"]
+				.dropdown
+					transform rotate(180deg)
+		.sub-section--text
+			span(1)
+			margin-top ($gutter*3)
+			margin-bottom ($gutter*2)
+			+below($sm)
+				margin-top ($gutter)
+				margin-bottom ($gutter)
+		.section-events
+			span(1)
+			padding-bottom $gutter
+			& > *
+				span(1)
+
+#archives
+	background $darkblue
+	color $primary
+	.event:hover
+		background initial
+	.icon
+		filter: invert(1)

@@ -1,0 +1,85 @@
+title: Site
+pages: true
+  template:
+    - default
+fields:
+  generalSettings:
+    label: Site Settings
+    type: headline
+  title:
+    label: Titre
+    type:  text
+  description:
+    label: Description
+    type:  textarea
+  keywords:
+    label: Keywords
+    type:  tags
+  customcss:
+    label: Custom CSS
+    type: textarea
+    buttons: false
+  googleAnalytics:
+    label: Google Analytics ID
+    type: text
+    icon: code
+    help: Tracking ID in the form UA-XXXXXXXX-X. Keep this field empty if you are not using it.
+    width: 1/2
+  ogimage:
+    label: Facebook OpenGraph image
+    type: image
+    help: 1200x630px minimum
+    width: 1/2
+  menu:
+    label: Menu
+    type: structure
+    style: table
+    fields:
+      page:
+        label: Page
+        type: quickselect
+        options: pages
+  placeholder:
+    label: Placeholder
+    type: image
+    width: 1/2
+  ticketing:
+    label: Billetterie
+    type: url
+    width: 1/2
+  seasonStart:
+    label: Season Start
+    type: date
+    width: 1/2
+  seasonEnd:
+    label: Season End
+    type: date
+    width: 1/2
+  location:
+    label: Localisation
+    type: quickselect
+    options: query
+    query:
+      page: /
+      fetch: index
+      template: informations
+      text: '{{title}} ({{uri}})'
+      value: '{{uri}}'
+    width: 1/2
+  newsletter:
+    label: Newsletter
+    type: url
+    width: 1/2
+  socials:
+    label: Socials
+    type: structure
+    style: table
+    fields:
+      title:
+        label: Title
+        type: text
+        required: true
+      url:
+        label: URL
+        type: url
+        required: true

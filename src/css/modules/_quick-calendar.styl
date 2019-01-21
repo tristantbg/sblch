@@ -1,0 +1,23 @@
+.quick-calendar
+	margin ($gutter*2) 0
+	text()
+	display flex
+	justify-content stretch
+	+below($md)
+		margin $gutter 0
+	.today
+		+above($md + 1)
+			background $violet
+	.day
+		border-top 1px solid
+		border-bottom 1px solid
+		display flex
+		flex-direction column
+		flex 1 1 auto
+	.bb
+		padding-top .4em
+		padding-bottom .4em
+		margin 0
+	.day:not(.today)
+		+below($md)
+			display none

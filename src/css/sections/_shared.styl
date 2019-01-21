@@ -1,0 +1,149 @@
+section
+	span(1)
+
+contained()
+	+above($md + 1)
+		padding-left 12.5%
+		padding-right 12.5%
+		&.narrow
+			padding-left 27%
+			padding-right 27%
+	+above($xl + 1)
+		padding-left 25%
+		padding-right 25%
+		&.narrow
+			padding-left 33%
+			padding-right 33%
+	+below($md)
+		padding-left ($padding/2)
+		padding-right ($padding/2)
+
+.contained
+	contained()
+
+#scroll-sections
+	span(4/5)
+	+below($sm)
+		stack()
+	section.section
+		span(1)
+		&:not(.p0)
+			padding $gutter
+			+below($sm)
+				padding 1rem
+		&:not(:last-child)
+			margin-bottom $gutter
+		&:last-child
+			min-height 101vh
+		h2.title
+			+below($sm)
+				font-size 2rem
+
+#sections-navigation
+	width 16%
+	position fixed
+	top $gutter
+	right $gutter
+	z-index 1
+	display flex
+	flex-direction column
+	align-items flex-end
+	+below($sm)
+		display none
+	&::after
+		content ''
+		display block
+		position absolute
+		top 0.8em
+		right 1em
+		bottom 1.8em
+		z-index -1
+		width 1px
+		background $secondary
+	div
+		margin-bottom 0.8em
+		text-align right
+		a
+			display flex
+			align-items center
+			position relative
+			&::after
+				content ''
+				position relative
+				z-index 1
+				margin-left 1.5em
+				width 1.3em
+				height 1.3em
+				background $ghostwhite
+				border 1px solid $secondary
+				border-radius 100%
+				flex 0 0 1.3em
+		&.active a::after
+			background $secondary
+
+.section-text
+	span(1)
+	text()
+	.column
+		span(1/2)
+		+below($sm)
+			stack()
+			margin-bottom 2rem
+		&:first-child
+			padding-right $gutter
+
+.section-events
+	span(1)
+	.event
+		span(1)
+		display flex
+		justify-content stretch
+		padding 1em 0
+		border-top 1px solid
+		+below($sm)
+			flex-wrap wrap
+		&:last-child
+			border-bottom 1px solid
+		&:hover
+			background $lightblue
+		&.finished
+			color $blue
+			.icon
+				opacity 0.5
+	.event-title, .event-date
+		width 25%
+		+below($sm)
+			width 100%
+			font-size 1.5rem
+	.event-distribution
+		width 45%
+		+below($sm)
+			width 100%
+			margin-top 0.5rem
+			margin-bottom 0
+			&:empty
+				display none
+	.event-icon
+		width 5%
+		display flex
+		justify-content center
+		align-items center
+		+below($sm)
+			display none
+		.icon
+			width 3rem
+			height 3rem
+		svg
+			display block
+			width 100%
+			height 100%
+
+.badger-accordion__panel
+	overflow hidden
+.js-badger-accordion-header
+	cursor pointer
+	hideselect()
+.badger-accordion__panel.-ba-is-hidden
+	max-height 0 !important
+.badger-accordion--initalised .badger-accordion__panel
+	transition max-height $kinetic 0.6s

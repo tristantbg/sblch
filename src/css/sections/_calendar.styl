@@ -1,0 +1,57 @@
+#page-content[page-type=calendar]
+	padding $gutter
+	+below($sm)
+		padding 0 0 $gutter
+
+.month-events
+	column(1/2)
+	text()
+	+below(1350px)
+		stack()
+	&:last-child
+		+below(1350px)
+			display none
+	.weekend
+		background $lightblue
+	.today, .today .weekend
+		background $violet
+	.month-title
+		+below($sm)
+			font-size 2rem
+			padding 1rem 1rem
+			background $primary
+	.month-items
+		border-top 1px solid
+		+below($sm)
+			padding 1rem
+	.day
+		border-bottom 1px solid
+		&.finished
+			color $violet
+	.day-title > *
+		padding .3em 0 .5em
+	.event
+		&:hover
+			background $lightblue
+		.event-time, .event-title
+			padding 0.3em 0 0.5em 0.3em
+		&:not(:last-child)
+			.event-time, .event-title
+				border-bottom 1px solid
+
+#previous-month
+	position absolute
+	top 0
+	left 0
+	z-index 10
+	+below($sm)
+		padding 1rem
+
+#next-month
+	position absolute
+	top 0
+	right 0
+	z-index 10
+	+below($sm)
+		padding 1rem
+			

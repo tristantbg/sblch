@@ -1,0 +1,16 @@
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.88 69.96">
+  <defs>
+    <style>
+      .cls-1,.cls-2{fill:none;stroke-miterlimit:10;stroke-width:2px}.cls-1{stroke:#1d1e1b}.cls-2{stroke:#1d1d1b}
+    </style>
+  </defs>
+  <ellipse fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="2px" cx="34.94" cy="3.9" rx="11.71" ry="2.9"/>
+  <path fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="2px" d="M39.16 36.08c7.67.47 13.36 2.18 13.36 4.22s-5.69 3.76-13.36 4.23M30.72 44.53c-7.72-.47-13.36-2.18-13.36-4.23s5.64-3.75 13.36-4.22"/>
+  <path fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="2px" d="M30.72 57.34a17.57 17.57 0 0 1-1.08-33.82v-17M40.23 6.49v17a17.57 17.57 0 0 1-1.07 33.82"/>
+  <path fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="2px" d="M30.72 33.07v31.74a4.22 4.22 0 0 0 8.44 0V33"/>
+  <ellipse fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="2px" cx="34.94" cy="30.89" rx="7.9" ry="2.41"/>
+  <path fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="2px" d="M4.68 22v31.71a4.22 4.22 0 0 0 8.44 0V21.87"/>
+  <path fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="2px" d="M16.8 19.78c0 1.33-3.54 2.41-7.9 2.41S1 21.11 1 19.78s3.54-2.4 7.9-2.4 7.9 1.07 7.9 2.4z"/>
+  <path fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="2px" d="M56.75 22v31.71a4.23 4.23 0 0 0 8.45 0V21.87"/>
+  <path fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="2px" d="M68.88 19.78c0 1.33-3.54 2.41-7.9 2.41s-7.9-1.08-7.9-2.41 3.53-2.4 7.9-2.4 7.9 1.07 7.9 2.4zM13.12 45.72h5.1M51.66 45.72h5.09"/>
+</svg>

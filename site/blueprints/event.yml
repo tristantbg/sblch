@@ -1,0 +1,193 @@
+title: Événement
+icon: dot-circle-o
+pages:
+  template:
+    - representation
+  num:
+    mode: date
+    display: null
+  max: null
+  sort: date asc
+  hide: true
+files:
+  sortable: false
+  max: null
+  hide: false
+  sanitize: true
+  fields: null
+  size: null
+  width: null
+  height: null
+fields:
+  reveal: reveal
+  autoid:
+    type: hidden
+  prevnext: prevnext
+  tab1:
+    label: Général
+    type:  tabs
+  title:
+    label: Titre
+    type: title
+    width: 3/4
+  icon:
+    label: Icône
+    type: quickselect
+    options:
+      theatre: Théâtre
+      science: Science
+      savants: Des savants sur les planches
+      cinema: Cinéma & cuisine du monde
+      chair: En chair et en texte
+      jeune: Jeune public
+      rencontres: Rencontres
+      scienceshumaines: Sciences humaines sur un plateau
+      expositions: Expositions
+    width: 1/4
+  subtitle:
+    label: Sous-Titre
+    type: text
+    width: 3/4
+  featured:
+    label: Image
+    type: image
+    help: Important
+    width: 1/4
+  subtitlePage:
+    label: Sous-Titre Page
+    type: textarea
+    help: Optionnel ou pour infos “Rencontre”
+  # live:
+  #   label: Visible par le public
+  #   type: switch
+  #   width: 1/4
+  # dateStart:
+  #   label: Date de début
+  #   type: datetime
+  #   required: true
+  #   date:
+  #     format: DD/MM/YYYY
+  #   time:
+  #     format: 24
+  #     interval: 15
+  #   width: 1/2
+  # timeEnd:
+  #   label: Date de fin
+  #   type: datetime
+  #   required: true
+  #   date:
+  #     format: DD/MM/YYYY
+  #   time:
+  #     format: 24
+  #     interval: 15
+  #   width: 1/2
+  distribution:
+    label: Distribution
+    type: structure
+    style: table
+    fields:
+      title:
+        label: Titre
+        type: text
+      text:
+        label: Contenu
+        type: textarea
+  tab2:
+    label: Header
+    type:  tabs
+  featuredVideo:
+    label: Video
+    help: Prend le dessus sur les autres champs
+    type: embed
+  slider:
+    label: Slider
+    help: Prend le dessus sur “Image”
+    type: images
+  tab3:
+    label: Contenu
+    type:  tabs
+  text:
+    label: Texte
+    type: textarea
+  medias:
+    label: Medias
+    type: images
+  tab4:
+    label: Infos pratiques
+    type:  tabs
+  eventDates:
+    label: Infos exceptionnelles
+    type: textarea
+  infos:
+    label: Infos pratiques
+    type: textarea
+  ticketing:
+    label: Billetterie
+    type: url
+    width: 1/2
+  duration:
+    label: Durée
+    type: text
+    width: 1/2
+  downloads:
+    label: Téléchargements
+    type: structure
+    style: table
+    fields:
+      title:
+        label: Titre
+        type: text
+        required: true
+      file:
+        label: Fichier
+        type: quickselect
+        options: files
+        required: true
+  partners:
+    label: Partenaires
+    type: structure
+    style: table
+    fields:
+      title:
+        label: Titre
+        type: text
+        required: true
+      image:
+        label: Logo
+        type: image
+        required: true
+      link:
+        label: Lien
+        type: url
+  tabs5:
+    label: Représentations
+    type: tabs
+  sortable:
+    label: Horaires
+    type:  sortable
+    sortable: false
+    layout:  representation
+    variant: null
+    limit: false
+    parent: null
+    prefix: null
+    options:
+      limit: false
+  tabs6:
+    label: En relation
+    type: tabs
+  related:
+    type: structure
+    style: table
+    limit: 4
+    fields:
+      page:
+        label: Page
+        type: quickselect
+        options: query
+        query:
+          page: calendrier
+          fetch: grandchildren
+          text: '{{title}} ({{uri}})'
+          value: '{{uri}}'
+        required: true

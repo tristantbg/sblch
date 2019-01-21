@@ -1,0 +1,21 @@
+.cc-window
+	transition none
+	z-index 50
+	+below($sm)
+		z-index 55
+
+.cc-banner.cc-theme-edgeless .cc-btn
+	&:hover
+		background $darkblue
+	+above($md + 1)
+		border-left 1px solid
+
+.cc-window.cc-banner
+	+above($md + 1)
+		left 22vh
+		width calc(100% - 22vh)
+
+
+.cc-revoke, .cc-window
+	font-family inherit
+	font-weight normal

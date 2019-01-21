@@ -1,0 +1,17 @@
+[page-type=informations]
+	.section-text
+		.button, .ghost
+			display inline-block
+	#acces
+		+above($sm + 1)
+			padding-top 0 !important
+		.section-text
+			.column:last-child
+				+above($sm + 1)
+					move(-1/2, $col-or-span: span)
+					padding-top 4rem
+		#map
+			+above($sm + 1)
+				move(1/2, $col-or-span: span)
+			+below($sm)
+				height 100vw

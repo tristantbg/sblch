@@ -1,0 +1,10 @@
+title: Index
+deletable: false
+options:
+  url: false
+pages: false
+files: false
+fields:
+  title:
+    label: Titre
+    type: title

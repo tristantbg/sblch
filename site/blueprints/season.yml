@@ -1,0 +1,35 @@
+title: La Saison
+pages: false
+options:
+  url: false
+files: true
+fields:
+  title:
+    label: Titre
+    type: title
+    width: 3/4
+  featured:
+    label: Image
+    type: image
+    help: Important
+    width: 1/4
+  seasonTitle:
+    label: Titre Saison
+  text:
+    label: Texte
+    type:  textarea
+  archive:
+    label: Archives
+    type:  structure
+    style: table
+    fields:
+      event:
+        label: Événement
+        type: quickselect
+        options: query
+        query:
+          page: /
+          fetch: index
+          template: event
+          text: '{{title}} ({{uri}})'
+          value: '{{uri}}'

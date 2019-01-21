@@ -1,0 +1,28 @@
+title: Spectacles
+icon: calendar-o
+pages:
+  template:
+    - event
+  num:
+    mode: default
+    display: null
+  max: null
+  sort: false
+  hide: false
+files: false
+fields:
+  title:
+    label: Titre
+    type: title
+  pageindex:
+    label: Index
+    type: index
+    options: children
+    columns:
+      title:
+        label: Titre
+        width: 300
+      subtitle: 
+        label: Sous-titre
+        width: 300
+      uid: Slug

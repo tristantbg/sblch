@@ -1,0 +1,66 @@
+.slider
+	hideselect()
+	width 100%
+	.flickity-viewport
+		transition height 200ms ease
+	.flickity-slider
+		position relative
+	.slide
+		width 100%
+		.content
+			position relative
+			width 100%
+			img
+				display block
+				width 100%
+				height auto
+		.content.video
+			width 100%
+			.plyr--ready
+				width 100%
+				height 100%
+			video
+				width 100%
+				height 100%
+				object-fit contain
+	.slide.is-selected
+		//
+	.flickity-page-dots
+		bottom -20px
+		.dot
+			background $primary
+			opacity 1
+			width 0.9rem
+			height 0.9rem
+			margin 0 0.2rem
+			&.is-selected
+				background $secondary
+	.flickity-prev-next-button
+		top 0
+		height 100%
+		width 50%
+		margin-top 0
+		background transparent
+		padding 0
+		transform none
+		border none
+		border-radius 0
+		z-index 10
+		+below($md)
+			display none
+		svg
+			display none
+		&.previous
+			left 0
+		&.next
+			right 0
+		&[disabled]
+			display none
+		&:focus
+			outline none
+			box-shadow none
+
+body.lightbox-on
+	overflow hidden
+	#lightbox
+		display block

@@ -1,0 +1,29 @@
+#featured-events
+	+above($sm + 1)
+		height 100vh
+	+below($sm)
+		height 135vmin
+		+landscape()
+			height 138vw
+	.flickity-viewport
+		height 100%
+	.flickity-prev-next-button
+		width 20%
+	.slide
+		height 100%
+	.featured-image
+		display block
+		align(horizontal)
+		top $gutter
+		+above($sm + 1)
+			width calc(100vh - 26rem)
+		+below($sm)
+			width calc(155vw - 26rem)
+	.featured-infos
+		position absolute
+		bottom $gutter
+		left 0
+		width 100%
+		text-align center
+	.button
+		width 9rem

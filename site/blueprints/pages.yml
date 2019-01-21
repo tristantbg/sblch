@@ -1,0 +1,10 @@
+title: Pages
+pages: default
+files: true
+deletable: false
+options:
+  url: false
+fields:
+  title:
+    label: Titre
+    type:  text

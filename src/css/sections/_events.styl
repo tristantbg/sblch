@@ -1,0 +1,49 @@
+#events-categories
+	.desktop
+		display inline-flex
+		flex-wrap wrap
+		padding $gutter $gutter ($gutter*2)
+		line-height 1.6
+		+below($sm)
+			display none
+		.category
+			padding 0 0.2em
+			white-space nowrap
+			&:not(:nth-child(2))
+				&::before
+					content '|'
+					padding-right 0.2em
+			&.active
+				bold()
+			&:not(.active)
+				a
+					border-bottom 1px solid
+	.mobile
+		font-size 1.5rem
+		margin-bottom 1rem
+		+above($sm + 1)
+			display none
+		.js-badger-accordion-header, .category a
+			padding 0.5rem 2vw
+			border-bottom 1px solid
+		.js-badger-accordion-header
+			display flex
+			justify-content space-between
+			.dropdown
+				display flex
+				justify-content center
+				align-items center
+				width 1.5rem
+				height 1.8rem
+				svg
+					display block
+					width 1.5rem
+					height 1.8rem
+			&[aria-expanded="true"]
+				.dropdown
+					transform rotate(180deg)
+		.category
+			a
+				display block
+			&.active
+				background $lightblue

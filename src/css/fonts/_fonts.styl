@@ -1,0 +1,119 @@
+webfont('LemurRB-Light','LemurRB-Light')
+webfont('LemurRB-Regular','LemurRB-Regular')
+webfont('LemurRB-Medium','LemurRB-Medium')
+webfont('LemurRB-Bold','LemurRB-Bold')
+
+light()
+	font-family 'LemurRB-Light', Helvetica Neue, Arial, sans-serif
+	
+regular()
+	font-family 'LemurRB-Regular', Helvetica Neue, Arial, sans-serif
+
+medium()
+	font-family 'LemurRB-Medium', Helvetica Neue, Arial, sans-serif
+
+bold()
+	font-family 'LemurRB-Bold', Helvetica Neue, Arial, sans-serif
+	
+bigtitle()
+	+above($sm + 1)
+		font-size 8.5vh
+	+below($sm)
+		font-size 11.5vw
+
+title()
+	font-size 3rem
+	line-height 1.2
+	medium()
+	+below($sm)
+		bold()
+		font-size 1.5rem
+
+subtitle()
+	font-size 1.8rem
+	line-height 1.2
+	+below($sm)
+		font-size 1.5rem
+
+text()
+	font-size 1.6rem
+	line-height 1.3
+	+below($sm)
+		font-size 1.1rem
+	strong
+		bold()
+	h2, h3
+		&:not(.title)
+			bold()
+			text-transform uppercase
+			margin 0
+
+caption()
+	line-height 1.4
+	
+
+
+// Main font styles
+
+::selection
+	background alpha($secondary, 0.5)
+
+::-moz-selection
+	background alpha($secondary, 0.5)
+
+body,html
+	-webkit-text-size-adjust 100%
+
+html
+	+above($sm + 1)
+		font-size 0.7vw
+	+above($xl + 1)
+		font-size 0.5vw
+	+below($sm)
+		font-size 3.3vw
+
+body
+	light()
+	font-size 1.2rem
+	line-height 1
+	// text-rendering optimizeLegibility
+	font-smoothing()
+	+below($sm)
+		font-size 1.1rem
+
+p
+	line-height inherit
+	&:not(:last-child)
+		margin-bottom 1em
+
+.section-text, #event-text
+	+below($sm)
+		font-size 1.5rem !important
+	a:not(.ghost):not(.button)
+		text-decoration underline
+
+.uppercase
+	text-transform uppercase
+
+.text-center
+	text-align center
+
+.big-title
+	bigtitle()
+
+.title
+	title()
+	&.light
+		light()
+
+.lead, .subtitle
+	subtitle()
+
+.text
+	text()
+
+.bold
+	bold()
+
+.caption
+	caption()

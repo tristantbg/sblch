@@ -1,0 +1,68 @@
+header
+	hideselect()
+	position fixed
+	top 0
+	left 0
+	background $primary
+	z-index 52
+	+above($sm + 1)
+		height 100%
+		width 11vh
+		padding ($padding*2) $padding
+	+below($sm)
+		height 13vw
+		width 100%
+		padding 2vw
+	#main-logo
+		width 100%
+		height 100%
+		#desktop-logo
+			display none
+			+above($sm + 1)
+				display block
+		#mobile-logo
+			display none
+			+below($sm)
+				display block
+		svg
+			display block
+			width 100%
+			height 100%
+	h1
+		display none
+
+#current-title
+	position fixed
+	white-space nowrap
+	z-index 50
+	svg
+		pointer-events none
+		display none
+		height 100%
+		width 33vw
+	+above($sm + 1)
+		height 11vh
+		width 100vh
+		left 11vh
+		top 100%
+		transform-origin top left
+		transform rotate(-90deg)
+		padding ($padding - 0.4) ($padding + 0.4) ($padding*2)
+	+below($sm)
+		width 100%
+		height 13.6vw
+		left 0
+		top 13vw
+		padding 0.5vw 2vw 0
+
+[page-type=home]
+	+below($sm)
+		#current-title
+			padding 0.4vw 2vw 0
+			span
+				display none
+			svg
+				display block
+
+[event-target=menu]
+	cursor pointer
