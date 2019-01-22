@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 
 <div id="sections-navigation">
-	<div class="active"><a class="subtitle uppercase" href="#a-propos">À propos</a></div>
+	<div class="active"><a class="subtitle uppercase" href="#a-propos"><?= $page->title()->html() ?></a></div>
 	<?php foreach ($page->children()->visible() as $key => $section): ?>
 		<div><a class="subtitle uppercase" href="#<?= $section->uid() ?>"><?= $section->title()->html() ?></a></div>
 	<?php endforeach ?>
@@ -14,8 +14,12 @@
 	style="background-image: url('<?= $featured->width(2000)->url() ?>')"
 	<?php endif ?>
 	>
+		<?php if ($page->videoEmbed()->isNotEmpty()): ?>
+			<?= $page->videoEmbed()->embed() ?>
+			<br>
+		<?php endif ?>
 		<div id="about-text">
-			<div class="title mb4 uppercase"><h2 class="title">À propos</h2></div>
+			<div class="title mb4 uppercase"><h2 class="title"><?= $page->title()->html() ?></h2></div>
 			<div class="section-text">
 				<?php if ($page->text()->isNotEmpty()): ?>
 				<div class="column"><?= $page->text()->kt() ?></div>
