@@ -47,8 +47,8 @@ c::set('ssl', true);
 c::set('locale', 'fr_FR');
 // c::set('panel.stylesheet', 'assets/css/panel.css');
 c::set('autobuster', true);
-c::set('cache', false);
-c::set('cache.driver', 'memcached');
+c::set('cache', true);
+c::set('cache.driver', 'file');
 c::set('plugin.embed.video.lazyload', true);
 c::set('plugin.embed.video.lazyload.btn', 'assets/images/play.png');
 
