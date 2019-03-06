@@ -5,7 +5,7 @@ webfont('LemurRB-Bold','LemurRB-Bold')
 
 light()
 	font-family 'LemurRB-Light', Helvetica Neue, Arial, sans-serif
-	
+
 regular()
 	font-family 'LemurRB-Regular', Helvetica Neue, Arial, sans-serif
 
@@ -14,7 +14,7 @@ medium()
 
 bold()
 	font-family 'LemurRB-Bold', Helvetica Neue, Arial, sans-serif
-	
+
 bigtitle()
 	+above($sm + 1)
 		font-size 8.5vh
@@ -47,10 +47,12 @@ text()
 			bold()
 			text-transform uppercase
 			margin 0
+		&+ p, &+ img
+			margin-top 1em
 
 caption()
 	line-height 1.4
-	
+
 
 
 // Main font styles
