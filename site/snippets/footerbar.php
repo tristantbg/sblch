@@ -14,8 +14,8 @@
 		</a>
 	</div>
 </footer>
-<footer style="padding-top: 0">
-	<a href="https://scenesblanches.com" id="footer-group">
+<footer style="padding-top: 0" class="text-center row">
+	<a href="https://scenesblanches.com" id="footer-group" class="row">
 		<div class="uppercase">Un site du groupe Scènes Blanches</div>
 	</a>
 </footer>
